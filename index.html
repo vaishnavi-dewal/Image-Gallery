@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <style>
+    @import url('style.css');
+  </style>
+</head>
+<body>
+   <h1>Image Gallery</h1>
+<div class="gallery">
+  <img src="images/img1.webp" alt="img1" class="thumb" data-index="0">
+  <img src="images/img2.webp" alt="img2" class="thumb" data-index="1">
+  <img src="images/img3.webp" alt="img3" class="thumb" data-index="2">
+  <img src="images/img4.jpg" alt="img4" class="thumb" data-index="3">
+  <img src="images/img5.jpg" alt="img5" class="thumb" data-index="4">
+  <img src="images/img6.jpg" alt="img6" class="thumb" data-index="5">
+  <img src="images/img7.jpg" alt="img7" class="thumb" data-index="6">
+  <img src="images/img8.jpg" alt="img8" class="thumb" data-index="7">
+</div>
+
+<!-- Overlay Modal -->
+<div id="overlay" class="overlay">
+  <span class="close" onclick="closeOverlay()">&times;</span>
+  <img class="overlay-img" id="overlayImg">
+  <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+  <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+
+<script src="script.js"></script>
+    </div>
+  </div>
+</body>
+</html>
